@@ -55,7 +55,9 @@ def server_error(request, template_name='500.html'):
         'sentry': sentry_id_from_request(request),
         'error': {
             'title': _('Something went wrong'),
-            'message': ('%s' % _('Something went wrong on our side... \n Please hold on while we fix it.')).replace('\n', '<br>'),
+            'message': ('%s' %
+                        _('Something went wrong on our side... \n Please hold on while we fix it.')).replace('\n',
+                                                                                                             '<br>'),
             'sentry': _('Fault code: #'),
         }
     }))
