@@ -1,0 +1,37 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+    },
+    "globals": {
+        "DJ_CONST": false,
+    },
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "app/webpack/config.dev.js",
+            },
+        },
+    },
+
+    "rules": {
+        // We use 4 spaces for indentation. Everywhere.
+        "indent": ["error", 4],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
+
+        // Set max line length to 120 chars. Smaller lengths feel too small on modern monitors.
+        "max-len": ["error", 120],
+
+        // Allow both single- as well as double quotes. This lets us use e.g. double quotes for user-visible strings and
+        //  single quotes for internals.
+        "quotes": "off",
+
+        // else-return improves readability sometimes, especially with one-liners.
+        "no-else-return": "off",
+
+        // Unlike Airbnb, we don't keep spaces inside of curly braces for objects.
+        "object-curly-spacing": ["error", "never"],
+    },
+}

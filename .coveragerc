@@ -1,0 +1,16 @@
+[run]
+branch = True
+source =
+    .
+
+omit =
+    */migrations/*
+    onepager/wsgi.py
+    gunicorn-settings.py
+    manage.py
+    fabfile.py
+    settings/*
+    *test*
+
+[html]
+directory = cover

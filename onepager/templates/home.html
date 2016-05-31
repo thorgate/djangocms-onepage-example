@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load onepager_tags %}
+
+{% block content %}
+<div class="container">
+    {% for page in request.current_page.get_children %}
+        {% render_page page %}
+    {% endfor %}
+</div>
+{% endblock content %}

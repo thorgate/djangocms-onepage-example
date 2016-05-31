@@ -1,0 +1,20 @@
+# Ignore everything in .idea
+.idea
+
+*.pyo
+*.pyc
+.sass-cache/
+npm-debug.log
+node_modules/
+venv/
+
+onepager/settings/local.py
+onepager/db.sqlite3
+onepager/app/webpack-stats.json
+onepager/app/build/
+onepager/assets/
+onepager/media/
+
+onepager/.cache
+onepager/.coverage
+onepager/cover/
